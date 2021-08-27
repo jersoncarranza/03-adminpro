@@ -10,6 +10,7 @@ import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 //import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
@@ -17,14 +18,15 @@ import { ComponentsModule } from '../components/components.module';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   exports:[
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    RouterModule
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
